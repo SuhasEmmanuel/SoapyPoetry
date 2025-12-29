@@ -240,7 +240,7 @@ const PillNav = ({
   return (
     <div className="pill-nav-container">
       {/* Soapy Poetry Text - Left side */}
-      <h3 className="font-display font-black text-2xl mb-0" style={{ color: 'var(--base, #8a584c)' }}>
+      <h3 className="font-display font-black text-3xl mb-0" style={{ color: 'var(--base, #8a584c)' }}>
         Soapy Poetry
       </h3>
 

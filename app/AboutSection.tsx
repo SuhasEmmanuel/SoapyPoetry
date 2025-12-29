@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="relative flex items-center justify-center overflow-hidden py-16 sm:py-20 px-6"
+      className="relative flex items-center justify-center overflow-hidden py-12 sm:py-16 px-6"
       style={{
         background: 'linear-gradient(135deg, #ffffff 0%, #fefaf5 30%, #fdf7f0 60%, #fcf4ea 100%)'
       }}
