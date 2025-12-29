@@ -30,7 +30,7 @@ const StorySection = () => {
             <div className="max-w-5xl mx-auto">
               <AnimatedContent distance={30} duration={0.9} delay={0.25}>
                 <p className="font-display font-normal text-xl sm:text-2xl text-[#5a4438] leading-relaxed">
-                  Soapy Poetry began with a simple wish—to create something pure and meaningful in a world of synthetic products. Inspired by a grandmother's traditional soap-making, our founder started crafting small batches at home, blending timeless techniques with modern knowledge.
+                  As a mother of two, my children's well-being has always been my greatest masterpiece. For years, our daily ritual involved a homemade herbal bath powder, hand-milled with love. But two years ago, life took an unexpected turn. A knee fracture left me bedridden, and for the first time, I couldn't prepare our traditional blends.
                 </p>
               </AnimatedContent>
             </div>
@@ -38,15 +38,7 @@ const StorySection = () => {
             <div className="max-w-5xl mx-auto">
               <AnimatedContent distance={30} duration={0.9} delay={0.35}>
                 <p className="font-display font-normal text-xl sm:text-2xl text-[#5a4438] leading-relaxed">
-                  What began as a passion became a mission to share the beauty of natural, handcrafted soaps. Even today, every bar is made by hand with care, sustainability, and attention to detail.
-                </p>
-              </AnimatedContent>
-            </div>
-
-            <div className="max-w-5xl mx-auto">
-              <AnimatedContent distance={30} duration={0.8} delay={0.45}>
-                <p className="font-display font-normal text-xl sm:text-2xl text-[#5a4438] leading-relaxed">
-                  We believe self-care should be natural and meaningful. Our soaps are more than cleansing—they're a gentle daily ritual that reconnects you with nature and with yourself.
+                  We turned to store-bought soaps, but the results were heartbreaking. Their sensitive skin became dry, itchy, and irritated. It was a wake-up call: I realized I needed a solution that offered the purity of my herbal powders with the convenience of a soap bar. That spark of necessity grew into Soapy Poetry. I set out to craft 100% natural, chemical-free cleansers that do more than just wash—they nourish. Today, my mission extends beyond my own home. I want our community to experience the poetry of nature, one skin-loving bar at a time.
                 </p>
               </AnimatedContent>
             </div>
