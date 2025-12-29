@@ -239,6 +239,11 @@ const PillNav = ({
 
   return (
     <div className="pill-nav-container">
+      {/* Soapy Poetry Text - Left side */}
+      <h3 className="font-display font-black text-2xl mb-0" style={{ color: 'var(--base, #8a584c)' }}>
+        Soapy Poetry
+      </h3>
+
       {/* Logo and Brand Name Section - Positioned to the right */}
       <div className={`pill-brand-section ${isScrolled ? 'scrolled' : ''}`} ref={brandSectionRef}>
         {isRouterLink(items?.[0]?.href) ? (
