@@ -28,6 +28,7 @@
   .pill-brand-section {
     position: static;
     left: auto;
+    display: none !important;
   }
 
   .pill-brand-logo {
@@ -120,6 +121,10 @@
     justify-content: space-between;
     padding: 0 1rem;
     background: transparent;
+  }
+
+  .pill-logo {
+    display: none !important;
   }
 }
 

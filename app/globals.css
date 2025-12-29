@@ -334,3 +334,37 @@
     text-shadow: 0 1px 4px rgba(253, 246, 237, 0.6), 0 2px 8px rgba(74, 53, 40, 0.15) !important;
   }
 }
+
+/* Responsive ingredient images */
+.ingredient-image {
+  width: auto;
+  height: 80px;
+  max-width: 100px;
+}
+
+@media (min-width: 640px) {
+  .ingredient-image {
+    height: 100px;
+    max-width: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ingredient-image {
+    height: 120px;
+    max-width: 150px;
+  }
+}
+
+/* Prevent text overflow in ingredients section */
+#ingredients {
+  overflow-x: hidden;
+}
+
+#ingredients p,
+#ingredients h2,
+#ingredients span {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}

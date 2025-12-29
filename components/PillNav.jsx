@@ -239,33 +239,31 @@ const PillNav = ({
 
   return (
     <div className="pill-nav-container">
-      {/* Soapy Poetry Text - Left side */}
-      <h3 className="font-display font-black text-3xl mb-0" style={{ color: 'var(--base, #8a584c)' }}>
-        Soapy Poetry
-      </h3>
+      {/* Soapy Poetry Text with Logo - Left side */}
+      {isRouterLink(items?.[0]?.href) ? (
+        <Link
+          href={items[0].href}
+          className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity"
+          aria-label="Home"
+        >
+          <img src={logo} alt={logoAlt} className="w-12 h-12 sm:hidden object-contain flex-shrink-0" />
+          <h3 className="font-display font-black text-xl sm:text-3xl mb-0 whitespace-nowrap" style={{ color: 'var(--base, #8a584c)' }}>
+            Soapy Poetry
+          </h3>
+        </Link>
+      ) : (
+        <a
+          href={items?.[0]?.href || '#'}
+          className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity"
+          aria-label="Home"
+        >
+          <img src={logo} alt={logoAlt} className="w-12 h-12 sm:hidden object-contain flex-shrink-0" />
+          <h3 className="font-display font-black text-xl sm:text-3xl mb-0 whitespace-nowrap" style={{ color: 'var(--base, #8a584c)' }}>
+            Soapy Poetry
+          </h3>
+        </a>
+      )}
 
-      {/* Logo and Brand Name Section - Positioned to the right */}
-      <div className={`pill-brand-section ${isScrolled ? 'scrolled' : ''}`} ref={brandSectionRef}>
-        {isRouterLink(items?.[0]?.href) ? (
-          <Link
-            href={items[0].href}
-            className="pill-brand-link"
-            aria-label="Home"
-          >
-            <img src={logo} alt={logoAlt} className="pill-brand-logo" />
-            <span className="pill-brand-text">Soapy Poetry</span>
-          </Link>
-        ) : (
-          <a
-            className="pill-brand-link"
-            href={items?.[0]?.href || '#'}
-            aria-label="Home"
-          >
-            <img src={logo} alt={logoAlt} className="pill-brand-logo" />
-            <span className="pill-brand-text">Soapy Poetry</span>
-          </a>
-        )}
-      </div>
 
       {/* Centered Pill Nav */}
       <nav className={`pill-nav ${className}`} aria-label="Primary" style={cssVars}>
@@ -273,7 +271,7 @@ const PillNav = ({
         {isRouterLink(items?.[0]?.href) ? (
           <Link
             href={items[0].href}
-            className="pill-logo"
+            className="pill-logo hidden sm:block"
             aria-label="Home"
             onMouseEnter={handleLogoEnter}
             role="menuitem"
@@ -283,7 +281,7 @@ const PillNav = ({
           </Link>
         ) : (
             <a
-              className="pill-logo"
+              className="pill-logo hidden sm:block"
               href={items?.[0]?.href || '#'}
               aria-label="Home"
               onMouseEnter={handleLogoEnter}
@@ -348,17 +346,17 @@ const PillNav = ({
             ))}
           </ul>
         </div>
-
-        <button
-          className="mobile-menu-button mobile-only"
-          onClick={toggleMobileMenu}
-          aria-label="Toggle menu"
-          ref={hamburgerRef}
-        >
-          <span className="hamburger-line" />
-          <span className="hamburger-line" />
-        </button>
       </nav>
+
+      <button
+        className="mobile-menu-button mobile-only"
+        onClick={toggleMobileMenu}
+        aria-label="Toggle menu"
+        ref={hamburgerRef}
+      >
+        <span className="hamburger-line" />
+        <span className="hamburger-line" />
+      </button>
 
       <div className="mobile-menu-popover mobile-only" ref={mobileMenuRef} style={cssVars}>
         <ul className="mobile-menu-list">
