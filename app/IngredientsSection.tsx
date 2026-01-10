@@ -24,6 +24,38 @@ const IngredientsSection = () => {
     {
       name: 'Oatmeal',
       image: '/oat-meal.png'
+    },
+    {
+      name: 'Coffee Bean',
+      image: '/coffee_beans.png'
+    },
+    {
+      name: 'Milk',
+      image: '/milk.png'
+    },
+    {
+      name: 'Neem',
+      image: '/neem.png'
+    },
+    {
+      name: 'Aloe Vera',
+      image: '/aloe_vera.png'
+    },
+    {
+      name: 'Mint',
+      image: '/mint.png'
+    },
+    {
+      name: 'Turmeric',
+      image: '/turmeric.png'
+    },
+    {
+      name: 'Tulsi',
+      image: '/tulsi.png'
+    },
+    {
+      name: 'Rose',
+      image: '/rose.png'
     }
   ];
 
@@ -62,7 +94,7 @@ const IngredientsSection = () => {
               }))}
               speed={80}
               direction="left"
-              logoHeight={160}
+              logoHeight={80}
               gap={80}
               pauseOnHover={true}
               scaleOnHover={true}

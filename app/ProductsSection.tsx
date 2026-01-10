@@ -7,37 +7,37 @@ const ProductsSection = () => {
   const products = [
     {
       id: 1,
-      name: 'Lavender Dream',
+      name: 'Milk And Manjishtha soap',
       img: '/soap1v2.jpg'
     },
     {
       id: 2,
-      name: 'Honey Oat',
+      name: 'Milk soap',
       img: '/soap2..jpg'
     },
     {
       id: 3,
-      name: 'Citrus Burst',
+      name: 'Milk And Manjishtha soap',
       img: '/soap3.jpg'
     },
     {
       id: 4,
-      name: 'Rose Petal',
+      name: 'Coffee soap',
       img: '/soap4JPG.jpg'
     },
     {
       id: 5,
-      name: 'Eucalyptus Mint',
+      name: 'Mint soap',
       img: '/soap5.jpg'
     },
     {
       id: 6,
-      name: 'Vanilla Bean',
+      name: 'Chamomile soap',
       img: '/soap6v2.jpg'
     },
     {
       id: 7,
-      name: 'Handmade Soap',
+      name: 'rose soap',
       img: '/soap7.jpg'
     }
   ];

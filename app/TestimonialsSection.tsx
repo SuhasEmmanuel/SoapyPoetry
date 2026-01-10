@@ -6,14 +6,14 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      location: 'Portland, OR',
-      text: "These soaps have completely transformed my skincare routine. My skin feels so soft and nourished, and I love knowing I'm using something completely natural."
+      name: 'Chandra Shekhar',
+      location: '',
+      text: "I have been using these soaps for over an year...my itchy and dry skin now became supple and glowy...heard their story how a couple passionate about getting rid of hazardous chemicals in their kids lives started their journey with these soaps....home made, eco-friendly and residue free...thanx a tonne for initiative for sustainability and helping people like us in the process...."
     },
     {
       name: 'Michael Chen',
       location: 'Seattle, WA',
-      text: 'The quality is outstanding. You can really tell these are made with care and attention. The Lavender Dream has become my absolute favorite.'
+      text: 'The quality is outstanding. You can really tell these are made with care and attention. The Milk And Manjishtha soap has become my absolute favorite.'
     },
     {
       name: 'Emily Rodriguez',

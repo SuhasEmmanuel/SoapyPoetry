@@ -134,8 +134,8 @@ const ProductCarousel = ({ products }) => {
                     {/* Overlay with Product Name */}
                     <motion.div 
                       className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"
-                      initial={{ opacity: 0 }}
-                      whileHover={{ opacity: 1 }}
+                      initial={{ opacity: 1 }}
+                      animate={{ opacity: 1 }}
                       transition={{ 
                         duration: 0.4,
                         ease: [0.25, 0.46, 0.45, 0.94]
@@ -143,8 +143,8 @@ const ProductCarousel = ({ products }) => {
                     >
                       <motion.div 
                         className="absolute bottom-0 left-0 right-0 p-4"
-                        initial={{ y: 20, opacity: 0 }}
-                        whileHover={{ y: 0, opacity: 1 }}
+                        initial={{ y: 0, opacity: 1 }}
+                        animate={{ y: 0, opacity: 1 }}
                         transition={{ 
                           duration: 0.3,
                           delay: 0.1,
