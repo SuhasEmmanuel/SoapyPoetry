@@ -1,6 +1,6 @@
 'use client';
 
-import TiltedCard from '@/components/TiltedCard';
+import ProductCarousel from '@/components/ProductCarousel';
 import AnimatedContent from '@/components/AnimatedContent';
 
 const ProductsSection = () => {
@@ -42,7 +42,6 @@ const ProductsSection = () => {
     }
   ];
 
-
   return (
     <section
       id="products"
@@ -60,25 +59,17 @@ const ProductsSection = () => {
           </AnimatedContent>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
-          {products.map(product => (
-            <div key={product.id} className="aspect-[3/4]">
-              <TiltedCard
-                imageSrc={product.img}
-                altText={product.name}
-                captionText=""
-                containerHeight="100%"
-                containerWidth="100%"
-                imageHeight="100%"
-                imageWidth="100%"
-                scaleOnHover={1.05}
-                rotateAmplitude={10}
-                showMobileWarning={false}
-                showTooltip={false}
-              />
-            </div>
-          ))}
-        </div>
+        <AnimatedContent distance={40} duration={0.9} delay={0.2}>
+          <div className="mb-6">
+            <p className="font-display font-normal text-lg sm:text-xl text-[#6b4a3d] text-center leading-relaxed max-w-3xl mx-auto">
+              Discover our handcrafted collection of natural soaps, each made with premium ingredients and essential oils to nourish your skin.
+            </p>
+          </div>
+        </AnimatedContent>
+
+        <AnimatedContent distance={30} duration={0.8} delay={0.3}>
+          <ProductCarousel products={products} />
+        </AnimatedContent>
       </div>
     </section>
   );

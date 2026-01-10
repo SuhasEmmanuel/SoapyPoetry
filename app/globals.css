@@ -120,6 +120,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+  
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-poppins), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -128,6 +129,10 @@
     background-image: radial-gradient(circle at top left, rgba(206, 183, 147, 0.15), transparent 45%),
       radial-gradient(circle at bottom right, rgba(206, 183, 147, 0.15), transparent 45%);
     background-attachment: fixed;
+    /* Global animation performance optimizations */
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
   }
 
   h1,
@@ -136,6 +141,28 @@
   h4,
   .font-display {
     font-family: var(--font-display), "Elsie", serif;
+  }
+  
+  /* Global animation optimizations */
+  *,
+  *::before,
+  *::after {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Optimize images for smooth animations */
+  img {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+  
+  /* Optimize video elements */
+  video {
+    transform: translateZ(0);
+    backface-visibility: hidden;
   }
 }
 

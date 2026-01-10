@@ -14,7 +14,7 @@ const buildKeyframes = (from, steps) => {
 
 const BlurText = ({
   text = '',
-  delay = 200,
+  delay = 150,
   className = '',
   spanClassName = '',
   animateBy = 'words',
@@ -23,9 +23,9 @@ const BlurText = ({
   rootMargin = '0px',
   animationFrom = undefined,
   animationTo = undefined,
-  easing = t => t,
+  easing = [0.25, 0.46, 0.45, 0.94], // Custom cubic-bezier for smoothness
   onAnimationComplete = undefined,
-  stepDuration = 0.35,
+  stepDuration = 0.5,
   as: Component = 'p'
 }) => {
   const elements = animateBy === 'words' ? text.split(' ') : text.split('');
@@ -50,18 +50,21 @@ const BlurText = ({
 
   const defaultFrom = useMemo(
     () =>
-      direction === 'top' ? { filter: 'blur(10px)', opacity: 0, y: -50 } : { filter: 'blur(10px)', opacity: 0, y: 50 },
+      direction === 'top' 
+        ? { filter: 'blur(8px)', opacity: 0, y: -30, scale: 0.95 } 
+        : { filter: 'blur(8px)', opacity: 0, y: 30, scale: 0.95 },
     [direction]
   );
 
   const defaultTo = useMemo(
     () => [
       {
-        filter: 'blur(5px)',
-        opacity: 0.5,
-        y: direction === 'top' ? 5 : -5
+        filter: 'blur(4px)',
+        opacity: 0.7,
+        y: direction === 'top' ? 3 : -3,
+        scale: 0.98
       },
-      { filter: 'blur(0px)', opacity: 1, y: 0 }
+      { filter: 'blur(0px)', opacity: 1, y: 0, scale: 1 }
     ],
     [direction]
   );
@@ -81,9 +84,10 @@ const BlurText = ({
         const spanTransition = {
           duration: totalDuration,
           times,
-          delay: (index * delay) / 1000
+          delay: (index * delay) / 1000,
+          ease: easing,
+          type: "tween"
         };
-        spanTransition.ease = easing;
 
         return (
           <motion.span

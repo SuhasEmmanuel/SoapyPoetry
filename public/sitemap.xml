@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage -->
+  <url>
+    <loc>https://soappypoetry.com/</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://soappypoetry.com/logo.png</image:loc>
+      <image:title>SoapyPoetry - Handmade Natural Soaps</image:title>
+      <image:caption>Premium handmade natural soaps and skincare products</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://soappypoetry.com/about</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Products Section -->
+  <url>
+    <loc>https://soappypoetry.com/products</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://soappypoetry.com/soap1v2.jpg</image:loc>
+      <image:title>Natural Handmade Soap</image:title>
+      <image:caption>Premium natural handmade soap with essential oils</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://soappypoetry.com/soap2..jpg</image:loc>
+      <image:title>Artisan Soap Collection</image:title>
+      <image:caption>Handcrafted artisan soaps with natural ingredients</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://soappypoetry.com/soap3.jpg</image:loc>
+      <image:title>Organic Soap Bar</image:title>
+      <image:caption>Organic soap bar with coconut oil and shea butter</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://soappypoetry.com/soap4JPG.jpg</image:loc>
+      <image:title>Luxury Soap</image:title>
+      <image:caption>Luxury handmade soap with premium ingredients</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://soappypoetry.com/soap5.jpg</image:loc>
+      <image:title>Natural Skincare</image:title>
+      <image:caption>Natural skincare soap with botanical extracts</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://soappypoetry.com/soap6v2.jpg</image:loc>
+      <image:title>Herbal Soap</image:title>
+      <image:caption>Herbal-infused handmade soap</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://soappypoetry.com/soap7.jpg</image:loc>
+      <image:title>Vegan Soap</image:title>
+      <image:caption>100% vegan and cruelty-free natural soap</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Ingredients Page -->
+  <url>
+    <loc>https://soappypoetry.com/ingredients</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://soappypoetry.com/coconut.png</image:loc>
+      <image:title>Coconut Oil</image:title>
+      <image:caption>Pure coconut oil for natural skincare</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://soappypoetry.com/shae_butter.png</image:loc>
+      <image:title>Shea Butter</image:title>
+      <image:caption>Premium shea butter for moisturizing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://soappypoetry.com/honey.png</image:loc>
+      <image:title>Natural Honey</image:title>
+      <image:caption>Pure honey for natural antibacterial properties</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://soappypoetry.com/oat-meal.png</image:loc>
+      <image:title>Oatmeal</image:title>
+      <image:caption>Natural oatmeal for gentle exfoliation</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://soappypoetry.com/olives.png</image:loc>
+      <image:title>Olive Oil</image:title>
+      <image:caption>Premium olive oil for skin nourishment</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Story/Brand Page -->
+  <url>
+    <loc>https://soappypoetry.com/story</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Contact Page -->
+  <url>
+    <loc>https://soappypoetry.com/contact</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

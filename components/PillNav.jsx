@@ -247,9 +247,11 @@ const PillNav = ({
           aria-label="Home"
         >
           <img src={logo} alt={logoAlt} className="w-12 h-12 sm:hidden object-contain flex-shrink-0" />
-          <h3 className="font-display font-black text-xl sm:text-3xl mb-0 whitespace-nowrap" style={{ color: 'var(--base, #8a584c)' }}>
-            Soapy Poetry
-          </h3>
+          <div className="px-4 py-2 rounded-full bg-[#ceb793] hover:bg-[#8a584c] transition-colors duration-300">
+            <h3 className="font-display font-black text-lg sm:text-xl mb-0 whitespace-nowrap" style={{ color: 'var(--pill-text, #3f2d26)' }}>
+              Soapy Poetry
+            </h3>
+          </div>
         </Link>
       ) : (
         <a
@@ -258,9 +260,11 @@ const PillNav = ({
           aria-label="Home"
         >
           <img src={logo} alt={logoAlt} className="w-12 h-12 sm:hidden object-contain flex-shrink-0" />
-          <h3 className="font-display font-black text-xl sm:text-3xl mb-0 whitespace-nowrap" style={{ color: 'var(--base, #8a584c)' }}>
-            Soapy Poetry
-          </h3>
+          <div className="px-4 py-2 rounded-full bg-[#ceb793] hover:bg-[#8a584c] transition-colors duration-300">
+            <h3 className="font-display font-black text-lg sm:text-xl mb-0 whitespace-nowrap" style={{ color: 'var(--pill-text, #3f2d26)' }}>
+              Soapy Poetry
+            </h3>
+          </div>
         </a>
       )}
 
@@ -303,6 +307,7 @@ const PillNav = ({
                     aria-label={item.ariaLabel || item.label}
                     onMouseEnter={() => handleEnter(i)}
                     onMouseLeave={() => handleLeave(i)}
+                    onClick={item.onClick}
                   >
                     <span
                       className="hover-circle"
@@ -326,6 +331,7 @@ const PillNav = ({
                     aria-label={item.ariaLabel || item.label}
                     onMouseEnter={() => handleEnter(i)}
                     onMouseLeave={() => handleLeave(i)}
+                    onClick={item.onClick}
                   >
                     <span
                       className="hover-circle"
@@ -366,7 +372,10 @@ const PillNav = ({
                 <Link
                   href={item.href}
                   className={`mobile-menu-link${activeHref === item.href ? ' is-active' : ''}`}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    setIsMobileMenuOpen(false);
+                    item.onClick?.(e);
+                  }}
                 >
                   {item.label}
                 </Link>
@@ -374,7 +383,10 @@ const PillNav = ({
                 <a
                   href={item.href}
                   className={`mobile-menu-link${activeHref === item.href ? ' is-active' : ''}`}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    setIsMobileMenuOpen(false);
+                    item.onClick?.(e);
+                  }}
                 >
                   {item.label}
                 </a>

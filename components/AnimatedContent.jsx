@@ -9,7 +9,7 @@ const AnimatedContent = ({
   distance = 100,
   direction = 'vertical',
   reverse = false,
-  duration = 0.8,
+  duration = 1.0,
   ease = 'power3.out',
   initialOpacity = 0,
   animateOpacity = true,
@@ -28,25 +28,31 @@ const AnimatedContent = ({
     const offset = reverse ? -distance : distance;
     const startPct = (1 - threshold) * 100;
 
+    // Set initial state with GPU acceleration
     gsap.set(el, {
       [axis]: offset,
       scale,
-      opacity: animateOpacity ? initialOpacity : 1
+      opacity: animateOpacity ? initialOpacity : 1,
+      force3D: true,
+      transformPerspective: 1000
     });
 
+    // Animate with smoother easing
     gsap.to(el, {
       [axis]: 0,
       scale: 1,
       opacity: 1,
       duration,
-      ease,
+      ease: 'power3.out',
       delay,
       onComplete,
+      force3D: true,
       scrollTrigger: {
         trigger: el,
         start: `top ${startPct}%`,
         toggleActions: 'play none none none',
-        once: true
+        once: true,
+        scrub: false
       }
     });
 
