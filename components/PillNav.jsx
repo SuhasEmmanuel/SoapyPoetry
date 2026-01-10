@@ -246,9 +246,9 @@ const PillNav = ({
           className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity"
           aria-label="Home"
         >
-          <img src={logo} alt={logoAlt} className="w-12 h-12 sm:hidden object-contain flex-shrink-0" />
-          <div className="px-4 py-2 rounded-full bg-[#ceb793] hover:bg-[#8a584c] transition-colors duration-300">
-            <h3 className="font-display font-black text-lg sm:text-xl mb-0 whitespace-nowrap" style={{ color: 'var(--pill-text, #3f2d26)' }}>
+          <img src={logo} alt={logoAlt} className="w-8 h-8 sm:hidden object-contain flex-shrink-0" />
+          <div className="px-3 py-1.5 rounded-full bg-[#ceb793] hover:bg-[#8a584c] transition-colors duration-300">
+            <h3 className="font-display font-black text-sm sm:text-xl mb-0 whitespace-nowrap" style={{ color: 'var(--pill-text, #3f2d26)' }}>
               Soapy Poetry
             </h3>
           </div>
@@ -259,9 +259,9 @@ const PillNav = ({
           className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity"
           aria-label="Home"
         >
-          <img src={logo} alt={logoAlt} className="w-12 h-12 sm:hidden object-contain flex-shrink-0" />
-          <div className="px-4 py-2 rounded-full bg-[#ceb793] hover:bg-[#8a584c] transition-colors duration-300">
-            <h3 className="font-display font-black text-lg sm:text-xl mb-0 whitespace-nowrap" style={{ color: 'var(--pill-text, #3f2d26)' }}>
+          <img src={logo} alt={logoAlt} className="w-8 h-8 sm:hidden object-contain flex-shrink-0" />
+          <div className="px-3 py-1.5 rounded-full bg-[#ceb793] hover:bg-[#8a584c] transition-colors duration-300">
+            <h3 className="font-display font-black text-sm sm:text-xl mb-0 whitespace-nowrap" style={{ color: 'var(--pill-text, #3f2d26)' }}>
               Soapy Poetry
             </h3>
           </div>

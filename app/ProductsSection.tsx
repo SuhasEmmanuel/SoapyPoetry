@@ -53,7 +53,7 @@ const ProductsSection = () => {
       <div className="relative z-10 max-w-6xl mx-auto w-full">
         <div className="text-center mb-8">
           <AnimatedContent distance={30} duration={0.8} delay={0.1}>
-            <h2 className="font-display font-black text-3xl sm:text-4xl md:text-5xl text-[#8a584c] leading-tight">
+            <h2 className="font-display font-black text-2xl sm:text-3xl text-[#8a584c] leading-tight">
               Our Collection
             </h2>
           </AnimatedContent>

@@ -20,7 +20,7 @@ const StorySection = () => {
         >
           <div className="text-center mb-8">
             <AnimatedContent distance={40} duration={0.9} delay={0.1}>
-              <h2 className="font-display font-black text-3xl sm:text-4xl md:text-5xl text-[#8a584c] leading-tight">
+              <h2 className="font-display font-black text-2xl sm:text-3xl text-[#8a584c] leading-tight">
                 Our Story
               </h2>
             </AnimatedContent>
@@ -29,7 +29,7 @@ const StorySection = () => {
           <div className="space-y-6">
             <div className="max-w-5xl mx-auto">
               <AnimatedContent distance={30} duration={0.9} delay={0.25}>
-                <p className="font-display font-normal text-xl sm:text-2xl text-[#5a4438] leading-relaxed">
+                <p className="font-display font-normal text-base sm:text-xl text-[#5a4438] leading-relaxed text-center sm:text-left">
                   As a mother of two, my children's well-being has always been my greatest masterpiece. For years, our daily ritual involved a homemade herbal bath powder, hand-milled with love. But two years ago, life took an unexpected turn. A knee fracture left me bedridden, and for the first time, I couldn't prepare our traditional blends.
                 </p>
               </AnimatedContent>
@@ -37,7 +37,7 @@ const StorySection = () => {
 
             <div className="max-w-5xl mx-auto">
               <AnimatedContent distance={30} duration={0.9} delay={0.35}>
-                <p className="font-display font-normal text-xl sm:text-2xl text-[#5a4438] leading-relaxed">
+                <p className="font-display font-normal text-base sm:text-xl text-[#5a4438] leading-relaxed text-center sm:text-left">
                   We turned to store-bought soaps, but the results were heartbreaking. Their sensitive skin became dry, itchy, and irritated. It was a wake-up call: I realized I needed a solution that offered the purity of my herbal powders with the convenience of a soap bar. That spark of necessity grew into Soapy Poetry. I set out to craft 100% natural, chemical-free cleansers that do more than just wash—they nourish. Today, my mission extends beyond my own home. I want our community to experience the poetry of nature, one skin-loving bar at a time.
                 </p>
               </AnimatedContent>

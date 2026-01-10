@@ -15,7 +15,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[85vh] flex items-start justify-center overflow-hidden pt-24 sm:pt-32"
+      className="relative min-h-[70vh] flex items-start justify-center overflow-hidden pt-16 sm:pt-20"
       style={{
         background: 'linear-gradient(135deg, #ffffff 0%, #fefaf5 30%, #fdf7f0 60%, #fcf4ea 100%)'
       }}
@@ -48,7 +48,7 @@ const HeroSection = () => {
       />
 
       <div className="relative z-10 w-full h-full flex flex-col items-center justify-between px-6">
-        <div className="max-w-3xl mx-auto text-center flex flex-col items-center pt-8 sm:pt-12">
+        <div className="max-w-3xl mx-auto text-center flex flex-col items-center pt-4 sm:pt-8">
           <div
             className={`relative transition-all duration-1000 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
@@ -58,7 +58,7 @@ const HeroSection = () => {
               <BlurText
                 as="h1"
                 text="Soapy Poetry"
-                className="font-display font-black text-5xl sm:text-6xl text-[#8a584c] leading-tight flex justify-center text-center"
+                className="font-display font-black text-4xl sm:text-5xl text-[#8a584c] leading-tight flex justify-center text-center"
                 spanClassName="font-display font-black text-[#8a584c]"
                 delay={140}
                 style={{ 
@@ -72,7 +72,7 @@ const HeroSection = () => {
               <BlurText
                 as="p"
                 text="Pure Handcrafted Soaps"
-                className="font-display font-normal text-2xl sm:text-3xl text-[#6b4a3d] mt-6 flex justify-center text-center"
+                className="font-display font-normal text-xl sm:text-2xl text-[#6b4a3d] mt-3 flex justify-center text-center"
                 spanClassName="font-display font-normal text-[#6b4a3d]"
                 delay={160}
                 style={{ 
@@ -81,10 +81,9 @@ const HeroSection = () => {
                 }}
               />
             </AnimatedContent>
-
             <AnimatedContent distance={30} duration={0.9} delay={0.35}>
               <p 
-                className="font-display font-normal mt-6 text-xl sm:text-2xl text-[#5a4438] leading-relaxed max-w-2xl mx-auto px-4"
+                className="font-display font-normal mt-3 text-xl sm:text-2xl text-[#5a4438] leading-relaxed text-center w-full bg-white/60 backdrop-blur-sm rounded-lg p-4"
               >
               Experience the pure touch of nature with soaps thoughtfully handcrafted from premium natural ingredients. Each bar is made with care, combining traditional methods and mindful craftsmanship to bring gentle nourishment to your skin while staying kind to the earth.
               </p>

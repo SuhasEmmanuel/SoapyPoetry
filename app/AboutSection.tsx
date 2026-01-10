@@ -20,7 +20,7 @@ const AboutSection = () => {
         >
           <div className="text-center mb-8">
             <AnimatedContent distance={30} duration={0.8} delay={0.1}>
-              <h2 className="font-display font-black text-3xl sm:text-4xl md:text-5xl text-[#8a584c] leading-tight">
+              <h2 className="font-display font-black text-2xl sm:text-3xl text-[#8a584c] leading-tight">
                 About Us
               </h2>
             </AnimatedContent>
@@ -28,7 +28,7 @@ const AboutSection = () => {
 
           <div className="max-w-5xl mx-auto">
             <AnimatedContent distance={30} duration={0.9} delay={0.25}>
-              <p className="font-display font-normal text-xl sm:text-2xl text-[#5a4438] leading-relaxed">
+              <p className="font-display font-normal text-base sm:text-xl text-[#5a4438] leading-relaxed text-center sm:text-left">
                 At Soapy Poetry, we celebrate handcrafted beauty, creating each bar with care using traditional methods and pure natural ingredients. Our mission is simple: to craft skin-nourishing soaps that honor you and the earth, made with the finest organic ingredients and free from harsh chemicals. Every bar reflects mindful craftsmanship and sustainable values—gentle on your skin, kind to the planet.
               </p>
             </AnimatedContent>

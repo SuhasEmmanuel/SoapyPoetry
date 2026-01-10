@@ -38,7 +38,7 @@ const IngredientsSection = () => {
       <div className="relative z-10 max-w-6xl mx-auto w-full">
         <div className="text-center mb-8 px-2 sm:px-0">
           <AnimatedContent distance={40} duration={0.9} delay={0.1}>
-            <h2 className="font-display font-black text-3xl sm:text-4xl md:text-5xl text-[#8a584c] leading-tight break-words">
+            <h2 className="font-display font-black text-2xl sm:text-3xl text-[#8a584c] leading-tight break-words">
               Pure Ingredients
             </h2>
           </AnimatedContent>
@@ -46,7 +46,7 @@ const IngredientsSection = () => {
 
         <div className="max-w-3xl mx-auto mb-6 px-4 sm:px-6 w-full">
           <AnimatedContent distance={30} duration={0.9} delay={0.25}>
-            <p className="font-display font-normal text-base sm:text-xl md:text-2xl text-[#5a4438] text-center leading-relaxed break-words overflow-wrap-anywhere">
+            <p className="font-display font-normal text-base sm:text-lg text-[#5a4438] text-center leading-relaxed break-words overflow-wrap-anywhere">
               We carefully select each ingredient for its natural benefits and quality. Every component in our soaps is chosen to provide the best care for your skin while maintaining our commitment to purity and sustainability.
             </p>
           </AnimatedContent>

@@ -15,7 +15,7 @@ const EarthSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <AnimatedContent distance={40} duration={0.9} delay={0.1}>
-            <h2 className="font-display font-black text-3xl sm:text-4xl md:text-5xl text-[#8a584c] leading-tight">
+            <h2 className="font-display font-black text-2xl sm:text-3xl text-[#8a584c] leading-tight">
               Our Earth Promise
             </h2>
           </AnimatedContent>
@@ -39,19 +39,19 @@ const EarthSection = () => {
           {/* Text Content Section */}
           <div className="space-y-6">
             <AnimatedContent distance={30} duration={0.9} delay={0.35}>
-              <p className="font-display font-normal text-xl sm:text-2xl text-[#5a4438] leading-relaxed">
+              <p className="font-display font-normal text-base sm:text-xl text-[#5a4438] leading-relaxed text-center sm:text-left">
                 We are committed to protecting our planet through sustainable practices and eco-friendly choices. Every decision we make considers the impact on our environment.
               </p>
             </AnimatedContent>
 
             <AnimatedContent distance={30} duration={0.9} delay={0.45}>
-              <p className="font-display font-normal text-xl sm:text-2xl text-[#5a4438] leading-relaxed">
+              <p className="font-display font-normal text-base sm:text-xl text-[#5a4438] leading-relaxed text-center sm:text-left">
                 Our packaging is made from recycled and biodegradable materials. We source ingredients locally when possible, reducing our carbon footprint and supporting local communities.
               </p>
             </AnimatedContent>
 
             <AnimatedContent distance={30} duration={0.9} delay={0.55}>
-              <p className="font-display font-normal text-xl sm:text-2xl text-[#5a4438] leading-relaxed">
+              <p className="font-display font-normal text-base sm:text-xl text-[#5a4438] leading-relaxed text-center sm:text-left">
                 We believe that taking care of yourself and taking care of the earth go hand in hand. By choosing our products, you're making a choice that benefits both your skin and our planet.
               </p>
             </AnimatedContent>
@@ -61,21 +61,21 @@ const EarthSection = () => {
         {/* Stats Grid */}
         <div className="grid md:grid-cols-3 gap-8 mt-12">
           <AnimatedContent distance={25} duration={0.8} delay={0.65}>
-            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-[#fef9f3] to-[#fcf4ea] border border-[#e8d5b5]/30 shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="font-display font-black text-3xl sm:text-4xl text-[#8a584c] mb-2">100%</div>
-              <div className="font-display font-normal text-base sm:text-lg text-[#6b4a3d]">Biodegradable</div>
+            <div className="text-center p-4 sm:p-6 rounded-xl bg-gradient-to-br from-[#fef9f3] to-[#fcf4ea] border border-[#e8d5b5]/30 shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="font-display font-black text-2xl sm:text-4xl text-[#8a584c] mb-2">100%</div>
+              <div className="font-display font-normal text-sm sm:text-lg text-[#6b4a3d]">Biodegradable</div>
             </div>
           </AnimatedContent>
           <AnimatedContent distance={25} duration={0.8} delay={0.75}>
-            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-[#fef9f3] to-[#fcf4ea] border border-[#e8d5b5]/30 shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="font-display font-black text-3xl sm:text-4xl text-[#8a584c] mb-2">0%</div>
-              <div className="font-display font-normal text-base sm:text-lg text-[#6b4a3d]">Plastic Waste</div>
+            <div className="text-center p-4 sm:p-6 rounded-xl bg-gradient-to-br from-[#fef9f3] to-[#fcf4ea] border border-[#e8d5b5]/30 shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="font-display font-black text-2xl sm:text-4xl text-[#8a584c] mb-2">0%</div>
+              <div className="font-display font-normal text-sm sm:text-lg text-[#6b4a3d]">Plastic Waste</div>
             </div>
           </AnimatedContent>
           <AnimatedContent distance={25} duration={0.8} delay={0.85}>
-            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-[#fef9f3] to-[#fcf4ea] border border-[#e8d5b5]/30 shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="font-display font-black text-3xl sm:text-4xl text-[#8a584c] mb-2">100%</div>
-              <div className="font-display font-normal text-base sm:text-lg text-[#6b4a3d]">Natural Ingredients</div>
+            <div className="text-center p-4 sm:p-6 rounded-xl bg-gradient-to-br from-[#fef9f3] to-[#fcf4ea] border border-[#e8d5b5]/30 shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="font-display font-black text-2xl sm:text-4xl text-[#8a584c] mb-2">100%</div>
+              <div className="font-display font-normal text-sm sm:text-lg text-[#6b4a3d]">Natural Ingredients</div>
             </div>
           </AnimatedContent>
         </div>

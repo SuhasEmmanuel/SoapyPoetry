@@ -3,6 +3,7 @@
 import AnimatedContent from '@/components/AnimatedContent';
 
 const TestimonialsSection = () => {
+
   const testimonials = [
     {
       name: 'Sarah Johnson',
@@ -37,7 +38,7 @@ const TestimonialsSection = () => {
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-8">
           <AnimatedContent distance={40} duration={0.9} delay={0.1}>
-            <h2 className="font-display font-black text-3xl sm:text-4xl md:text-5xl text-[#8a584c] leading-tight">
+            <h2 className="font-display font-black text-2xl sm:text-3xl text-[#8a584c] leading-tight">
               What Our Customers Say
             </h2>
           </AnimatedContent>
@@ -45,41 +46,72 @@ const TestimonialsSection = () => {
 
         <div className="max-w-3xl mx-auto mb-6">
           <AnimatedContent distance={30} duration={0.9} delay={0.25}>
-            <p className="font-display font-normal text-xl sm:text-2xl text-[#5a4438] text-center leading-relaxed">
+            <p className="font-display font-normal text-base sm:text-xl text-[#5a4438] text-center leading-relaxed">
               We're honored to share the experiences of our customers who have made Soapy Poetry a part of their daily self-care routine.
             </p>
           </AnimatedContent>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        {/* Mobile grid - show 4 cards at once */}
+        <div className="md:hidden grid grid-cols-2 gap-3">
+          {testimonials.slice(0, 4).map((testimonial, index) => (
+            <AnimatedContent key={index} className="flex-none" distance={25} duration={0.9} delay={0.35 + (index * 0.1)}>
+              <div className="bg-[#f5eacf] rounded-lg p-2.5 border border-[#ceb793]">
+                <div className="mb-3">
+                  <div className="flex items-center gap-2 text-[#8a584c] mb-2">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <p className="font-display font-normal text-xs text-[#5a4438] leading-tight italic">
+                    "{testimonial.text}"
+                  </p>
+                </div>
+                <div className="mt-3 pt-3 border-t border-[#8a584c]">
+                  <p className="font-display font-semibold text-xs text-[#8a584c]">
+                    {testimonial.name}
+                  </p>
+                  <p className="font-display font-normal text-xs text-[#6b4a3d]">
+                    {testimonial.location}
+                  </p>
+                </div>
+              </div>
+            </AnimatedContent>
+          ))}
+        </div>
+
+        {/* Desktop grid */}
+        <div className="hidden md:grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
             <AnimatedContent key={index} distance={25} duration={0.9} delay={0.35 + (index * 0.1)}>
-              <div className="bg-[#f5eacf] rounded-lg p-6 border-2 border-[#ceb793]">
-              <div className="mb-4">
-                <div className="flex items-center gap-2 text-[#8a584c] mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <svg
-                      key={i}
-                      className="w-5 h-5 fill-current"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                  ))}
+              <div className="bg-[#f5eacf] rounded-lg p-4 border border-[#ceb793]">
+                <div className="mb-3">
+                  <div className="flex items-center gap-2 text-[#8a584c] mb-2">
+                    {[...Array(5)].map((_, i) => (
+                      <svg
+                        key={i}
+                        className="w-4 h-4 fill-current"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <p className="font-display font-normal text-sm sm:text-base text-[#5a4438] leading-relaxed italic">
+                    "{testimonial.text}"
+                  </p>
                 </div>
-                <p className="font-display font-normal text-base sm:text-lg text-[#5a4438] leading-relaxed italic">
-                  "{testimonial.text}"
-                </p>
+                <div className="mt-3 pt-3 border-t border-[#8a584c]">
+                  <p className="font-display font-semibold text-sm sm:text-base text-[#8a584c]">
+                    {testimonial.name}
+                  </p>
+                  <p className="font-display font-normal text-xs sm:text-sm text-[#6b4a3d]">
+                    {testimonial.location}
+                  </p>
+                </div>
               </div>
-              <div className="mt-4 pt-4 border-t border-[#8a584c]">
-                <p className="font-display font-semibold text-base sm:text-lg text-[#8a584c]">
-                  {testimonial.name}
-                </p>
-                <p className="font-display font-normal text-sm sm:text-base text-[#6b4a3d]">
-                  {testimonial.location}
-                </p>
-              </div>
-            </div>
             </AnimatedContent>
           ))}
         </div>
